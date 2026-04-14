@@ -37,6 +37,7 @@ define('TWSP_ACF_URL', plugin_dir_url(__FILE__) . '/lib/advanced-custom-fields/'
 // activation_callback
 function activation_hook_callback(){
     //# do your activation code 
+    // for example create database table 
 }
 register_activation_hook(__FILE__, 'activation_hook_callback');
 
@@ -46,6 +47,7 @@ register_activation_hook(__FILE__, 'activation_hook_callback');
 // deactivation_callback 
 function deactivation_hook_callback(){
     //# do your deactivation code 
+    // for example remove database talbe when plugin deactivated
 }
 
 register_deactivation_hook(__FILE__, 'deactivation_hook_callback');
