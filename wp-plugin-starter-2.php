@@ -31,11 +31,12 @@ define('TWSP_ACF_URL', plugin_dir_url(__FILE__) . '/lib/advanced-custom-fields/'
 
 // you also may want to use 
 
+/*
 
 
-
-// activation_callback
-function activation_hook_callback(){
+//1. activation_callback
+function activation_hook_callback()
+{
     //# do your activation code 
     // for example create database table 
 }
@@ -44,13 +45,28 @@ register_activation_hook(__FILE__, 'activation_hook_callback');
 
 // ----------------------------
 
-// deactivation_callback 
-function deactivation_hook_callback(){
+//2. deactivation_callback 
+function deactivation_hook_callback()
+{
     //# do your deactivation code 
-    // for example remove database talbe when plugin deactivated
+    // for example remove or clene database talbe when plugin deactivated
 }
 
 register_deactivation_hook(__FILE__, 'deactivation_hook_callback');
+
+//3. when plugin is deleted 
+function register_uninstall_hook_callback()
+{
+    //# do your code when plugin is deleted from site
+    // for example remove or clene database talbe when plugin deactivated
+}
+
+register_uninstall_hook(__FILE__, 'plugin_deleted');
+
+
+
+
+
 
 
 use Hasan\TroviaWpSubscriptionPlus\Main;
