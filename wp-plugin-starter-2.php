@@ -29,6 +29,27 @@ define('TWSP_PLUGIN_URI', plugin_dir_url(__FILE__));
 define('TWSP_ACF_PATH', plugin_dir_path(__FILE__) . '/lib/advanced-custom-fields/');
 define('TWSP_ACF_URL', plugin_dir_url(__FILE__) . '/lib/advanced-custom-fields/');
 
+// you also may want to use 
+
+
+
+
+// activation_callback
+function activation_hook_callback(){
+    //# do your activation code 
+}
+register_activation_hook(__FILE__, 'activation_hook_callback');
+
+
+// ----------------------------
+
+// deactivation_callback 
+function deactivation_hook_callback(){
+    //# do your deactivation code 
+}
+
+register_deactivation_hook(__FILE__, 'deactivation_hook_callback');
+
 
 use Hasan\TroviaWpSubscriptionPlus\Main;
 
