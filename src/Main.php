@@ -39,7 +39,5 @@ class Main
         //  $this->subscriber = new Subscriber();
         //  $this->subscriber->register();
 
-
-
     }
 }

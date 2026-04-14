@@ -1,0 +1,42 @@
+# Basic plugin setup with `Singleton`
+
+### Delete unecessary codes
+
+- `rename` the main folder and file.
+- composer init
+- Copy the below composer required plackaes `update the packeges when availble`.
+
+## Copy the composer file use only the required packages rest delete.
+
+```
+{
+
+  "scripts": {
+    "analyse": "phpstan analyse",
+    "lint": "phpcs"
+  },
+  "require": {
+    "php": ">=8.0"
+  },
+  "require-dev": {
+    "php-stubs/wordpress-stubs": "^6.8",
+    "php-stubs/woocommerce-stubs": "^10.6",
+    "php-stubs/acf-pro-stubs": "^6.5",
+    "arifpavel/elementor-stubs": "3.1.4.1",
+    "phpstan/phpstan": "^1.11",
+    "squizlabs/php_codesniffer": "^3.9",
+    "phpcompatibility/php-compatibility": "^9.3",
+    "php-stubs/woocommerce-subscriptions-stubs": "^8.4"
+  },
+  "config": {
+    "platform": {
+      "php": "8.0.0"
+    }
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true
+}
+
+```
+
+##
