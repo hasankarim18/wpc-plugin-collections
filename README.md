@@ -39,4 +39,73 @@
 
 ```
 
-##
+## Need Vscode settings below
+
+`.vscode->settings.json`
+
+```
+{
+  "intelephense.environment.includePaths": [
+    "${workspaceFolder}/vendor/php-stubs",
+    "${workspaceFolder}/vendor/arifpavel",
+    "${workspaceFolder}/custom-stubs.php"
+  ],
+
+  "intelephense.stubs": [
+    "apache",
+    "bcmath",
+    "Core",
+    "curl",
+    "date",
+    "json",
+    "mbstring",
+    "openssl",
+    "PDO",
+    "mysql",
+    "sqlite3",
+    "Phar",
+    "Reflection",
+    "session",
+    "sockets",
+    "standard",
+    "superglobals",
+    "tokenizer",
+    "xml",
+    "wordpress"
+  ],
+
+  "intelephense.files.associations": ["**/*.php"],
+
+  "intelephense.diagnostics.enable": true,
+
+  "intelephense.inlayHints.parameterNames.enabled": true,
+  "intelephense.inlayHints.variableTypes.enabled": true,
+  "intelephense.inlayHints.propertyDeclarationTypes.enabled": true,
+  "intelephense.inlayHints.functionReturnTypes.enabled": true,
+
+  "editor.inlayHints.enabled": "on",
+
+  "intelephense.telemetry.enabled": false,
+
+  "files.exclude": {
+    "**/vendor/**/.git": true,
+    "**/node_modules": true
+  },
+
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/vendor": true
+  },
+
+  "editor.fontSize": 14,
+  "window.zoomLevel": 0.5
+}
+
+
+```
+
+#### For custom stubs use `"${workspaceFolder}/custom-stubs.php"`
+
+- create a folder in the main directory and declare functions there which is `custom`
+- For example see `woocommerce-custom-stubs.php`
+- if neede add another `"${workspaceFolder}/custom-stubs-2.php"`

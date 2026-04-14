@@ -1,7 +1,5 @@
 <?php
 
-
-
 /**
  * WooCommerce procedural/template function stubs for IDE
  * These do nothing at runtime but fix Intelephense autocomplete
