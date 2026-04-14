@@ -2,7 +2,7 @@
   "intelephense.environment.includePaths": [
     "${workspaceFolder}/vendor/php-stubs",
     "${workspaceFolder}/vendor/arifpavel",
-    "${workspaceFolder}/woocommerce-custom-stubs.php"
+    "${workspaceFolder}/custom-stubs.php"
   ],
 
   "intelephense.stubs": [
