@@ -1,4 +1,7 @@
+/vendor/arifpavel
+/vendor/php-stubs
+/vendor/phpcompatibility
+/vendor/phpstan
+/vendor/squizlabs
 
-/vendor/
 composer.json
-composer.lock

@@ -1,6 +1,6 @@
 <?php
 
-namespace Hasan\TroviaWpSubscriptionPlus\App\Trait;
+namespace Hasan\PostReadingTimePlus\App;
 
 if (!defined('ABSPATH')) {
     exit;
