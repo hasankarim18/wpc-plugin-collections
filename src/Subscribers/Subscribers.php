@@ -14,7 +14,9 @@ class Subscribers
     {
         $features = [
             new CreateSubscriberPT(),
-            new CreateAcf()
+            new CreateAcf(),
+            new ShortCode(),
+            new AdminColumnModification()
         ];
 
         foreach ($features as $feature) {
