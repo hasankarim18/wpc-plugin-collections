@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
-        'name' => 'hasan/post-reading-time-plus',
+        'name' => 'hasan/wp-plugin-collections',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '27109a8dc4169e19deb3186d4a2c20998bfcdcec',
+        'reference' => 'e2ba3eb745205b48c6a41795107fe577d6a4a8d2',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -19,10 +19,10 @@
             'aliases' => array(),
             'dev_requirement' => true,
         ),
-        'hasan/post-reading-time-plus' => array(
+        'hasan/wp-plugin-collections' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '27109a8dc4169e19deb3186d4a2c20998bfcdcec',
+            'reference' => 'e2ba3eb745205b48c6a41795107fe577d6a4a8d2',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

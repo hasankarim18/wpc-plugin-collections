@@ -5,3 +5,7 @@
 /vendor/squizlabs
 
 composer.json
+/lib
+/lib/advanced-custom-fields
+
+/vendor/

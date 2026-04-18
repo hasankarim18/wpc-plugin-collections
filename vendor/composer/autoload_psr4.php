@@ -6,5 +6,5 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Hasan\\PostReadingTimePlus\\' => array($baseDir . '/src'),
+    'Hasan\\WpPluginCollections\\' => array($baseDir . '/src'),
 );

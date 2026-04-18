@@ -1,7 +1,7 @@
 <?php
 
 /*
- * Plugin Name:       POST Reading time plus
+ * Plugin Name:       Wp plugin Collections
  * Plugin URI:        https://hasan.com/plugins/post-reading-time-plus/
  * Description:       Show the reading time of each post
  * Version:           1.0.0
@@ -18,17 +18,23 @@
  */
 
 
-namespace Hasan\PostReadingTimePlus;
+namespace Hasan\WpPluginCollections;
 
 
 
-define('PRTP_PLUGIN_FILE', __FILE__);
-define('PRTP_PLUGIN_PATH', plugin_dir_path(__FILE__));
-define('PRTP_PLUGIN_URI', plugin_dir_url(__FILE__));
+define('WPPC_PLUGIN_FILE', __FILE__);
+define('WPPC_PLUGIN_PATH', plugin_dir_path(__FILE__));
+define('WPPC_PLUGIN_URI', plugin_dir_url(__FILE__));
+// 
+define('WPPC_ACF_PATH', plugin_dir_path(__FILE__) . '/lib/advanced-custom-fields/');
+define('WPPC_ACF_URL', plugin_dir_url(__FILE__) . '/lib/advanced-custom-fields/');
 
+
+// acf inincluded for the 6.8.01 for subscriber module
+include_once(WPPC_ACF_PATH . 'acf.php');
 require_once __DIR__ . '/vendor/autoload.php';
 
-use Hasan\PostReadingTimePlus\Main;
+use Hasan\WpPluginCollections\Main;
 
 
 Main::instance()->init();

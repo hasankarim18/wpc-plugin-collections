@@ -1,6 +1,6 @@
 <?php
 
-namespace Hasan\PostReadingTimePlus\App;
+namespace Hasan\WpPluginCollections\App;
 
 if (!defined('ABSPATH')) {
     exit;

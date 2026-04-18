@@ -1,23 +1,27 @@
 <?php
 
-namespace Hasan\WpPluginCollections\HooksPlay;
+namespace Hasan\WpPluginCollections\Subscribers;
 
 if (!defined('ABSPATH')) {
     exit;
 }
 
-class HooksPlay
+class Subscribers
 {
-    function register()
+
+
+    public function register()
     {
         $features = [
-            new TitleModify()
+            new CreateSubscriberPT(),
+            new CreateAcf()
         ];
 
         foreach ($features as $feature) {
             $feature->register();
         }
     }
+
 
 
 

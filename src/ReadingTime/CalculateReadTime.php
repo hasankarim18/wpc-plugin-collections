@@ -1,6 +1,6 @@
 <?php
 
-namespace Hasan\PostReadingTimePlus\ReadingTime;
+namespace Hasan\WpPluginCollections\ReadingTime;
 
 if (!defined('ABSPATH')) {
     exit;
@@ -10,7 +10,10 @@ class CalculateReadTime
 {
     function register()
     {
+
+
         add_filter('the_content', [$this, 'calcualte_reading_time']);
+
     }
 
     function calcualte_reading_time($content)
@@ -48,7 +51,19 @@ class CalculateReadTime
         echo $content;
         ?>
         <?php
-        return ob_get_clean();
+        $html = ob_get_clean();
+
+        if (
+            !is_admin() &&
+            get_post_type() == 'post' &&
+            is_single() &&
+            is_main_query()
+
+        ):
+            return $html;
+        endif;
+
+        return $content;
     }
 
 }

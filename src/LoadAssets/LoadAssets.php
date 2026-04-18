@@ -1,6 +1,6 @@
 <?php
 
-namespace Hasan\PostReadingTimePlus\LoadAssets;
+namespace Hasan\WpPluginCollections\LoadAssets;
 
 
 
@@ -18,8 +18,8 @@ class LoadAssets
         // var_dump("kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk");
 
         if ($screen == 'tools_page_prtp-read-time') {
-            wp_enqueue_script('prtp_load_js', PRTP_PLUGIN_URI . '/src/Assets/js/main.js', ['jquery'], true);
-            wp_enqueue_style('prtp_style', PRTP_PLUGIN_URI . '/src/Assets/css/main.css', [], 'all');
+            wp_enqueue_script('prtp_load_js', WPPC_PLUGIN_URI . '/src/Assets/js/main.js', ['jquery'], true);
+            wp_enqueue_style('prtp_style', WPPC_PLUGIN_URI . '/src/Assets/css/main.css', [], 'all');
         }
 
 

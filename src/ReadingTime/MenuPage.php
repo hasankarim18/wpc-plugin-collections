@@ -1,5 +1,5 @@
 <?php
-namespace Hasan\PostReadingTimePlus\ReadingTime;
+namespace Hasan\WpPluginCollections\ReadingTime;
 
 if (!defined('ABSPATH')) {
     exit;
