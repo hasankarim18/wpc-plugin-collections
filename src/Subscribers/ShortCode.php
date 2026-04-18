@@ -115,7 +115,7 @@ class ShortCode
 
     public function create_short_code()
     {
-
+        ob_start();
         include_once plugin_dir_path(__FILE__) . 'wp-subscriber_css.php';
         ?>
         <div id="wpc_subscriber_form_container" class="wpc_subscriber_form_container">
@@ -147,5 +147,6 @@ class ShortCode
             </form>
         </div>
         <?php
+        return ob_get_clean();
     }
 }

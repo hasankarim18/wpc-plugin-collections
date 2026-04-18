@@ -10,6 +10,14 @@ class QuickQrCode
 {
     public function register()
     {
+        $features = [
+            new AdminPanel()
+        ];
+
+        foreach ($features as $feature) {
+            $feature->register();
+        }
+
         add_filter('the_content', [$this, 'append_qr_code']);
     }
 

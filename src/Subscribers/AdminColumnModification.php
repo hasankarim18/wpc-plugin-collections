@@ -65,7 +65,7 @@ class AdminColumnModification
     public function make_column_sortable($columns)
     {
         $columns['email'] = 'email';
-        $columns['mobile'] = 'mobile';
+        //  $columns['mobile'] = 'mobile';
         return $columns;
     }
 
