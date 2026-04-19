@@ -27,10 +27,10 @@ class QuickQrCode
         if (!is_admin()) {
             if (is_single()) {
                 $url = get_permalink();
-                $qr_url = "https://quickchart.io/qr?text={$url}";
+                $qr_url = "https://quickchart.io/qr?text={$url}&dark=f00&light=0ff";
                 $qr_code = "get qr code";
                 ob_start();
-                $scan_text = "Scan me";
+                $scan_text = get_option('wpc_qr_scan_text', 'Scan me');
                 ?>
 
                 <div>
@@ -40,8 +40,13 @@ class QuickQrCode
                     <div style="
                     display: flex;
                      justify-content: center; 
-                     align-items: start;
-                     flex-direction:column;">
+                     align-items: center;
+                     flex-direction:column;
+                     position:fixed;
+                     top:50px;
+                     right:10px;
+                     text-align: center;
+                     ">
                         <img src="<?php echo esc_attr($qr_url); ?>" alt="">
                         <span><?php echo esc_html($scan_text); ?></span>
                     </div>
