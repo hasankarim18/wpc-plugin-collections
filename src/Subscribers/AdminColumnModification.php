@@ -71,6 +71,8 @@ class AdminColumnModification
 
     // #step 4
 
+
+    // filter pre_get_posts
     public function enable_sorting_logic($query)
     {
         if (!is_admin() || !$query->is_main_query())

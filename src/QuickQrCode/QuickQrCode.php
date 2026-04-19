@@ -30,7 +30,7 @@ class QuickQrCode
                 $qr_url = "https://quickchart.io/qr?text={$url}&dark=f00&light=0ff";
                 $qr_code = "get qr code";
                 ob_start();
-                $scan_text = get_option('wpc_qr_scan_text', 'Scan me');
+                $scan_text = get_option('wpc_qr_scan_text', esc_html__("Scan me", WPPC_TEXT_DOMAIN));
                 ?>
 
                 <div>

@@ -40,7 +40,7 @@ class ShortCode
 
     public function ajax_handler()
     {
-        if (!isset($_REQUEST['nonce']) && !wp_verify_nonce($_REQUEST['nonnce'], 'wpc_subscriber_nonce')) {
+        if (!isset($_REQUEST['nonce']) && !wp_verify_nonce($_REQUEST['nonce'], 'wpc_subscriber_nonce')) {
             wp_send_json_error([
                 "success" => false,
                 "message" => "Invalid requrest."
@@ -120,29 +120,35 @@ class ShortCode
         ?>
         <div id="wpc_subscriber_form_container" class="wpc_subscriber_form_container">
             <form id="wpc_subscriber_form">
-                <div>
-                    <h2 style="text-align: center;">Get Subscribed.</h2>
-                    <label for="">
-                        <span>Name</span>
-                        <input type="text" name="name">
-                    </label>
-                    <label for="">
-                        <span>Email</span>
-                        <input type="email" name="email">
-                    </label>
-                    <label for="">
-                        <span>Phone Number</span>
-                        <input type="text" name="phone">
-                    </label>
-                </div>
-                <div class="wpc_subscriber_form_submit">
-                    <input type="submit" value="Submit" name="wpc_subscriber_form_submit">
-                </div>
-                <div id="wpc_s_success_message" class="wpc_hide">
-                    Subscriber added successfully.
-                </div>
-                <div id="wpc_s_error_message" class="wpc_hide">
+                <h2 style="text-align: center;">
+                    <?php esc_html_e("Get Subscribed.", WPPC_TEXT_DOMAIN); ?>
+                </h2>
 
+                <label for="wpc_name">
+                    <span>
+                        <?php esc_html_e("Name", WPPC_TEXT_DOMAIN); ?>
+                    </span>
+                    <input id="wpc_name" type="text" name="name">
+                </label>
+
+                <label for="wpc_email">
+                    <span>
+                        <?php esc_html_e("Email", WPPC_TEXT_DOMAIN); ?>
+                    </span>
+                    <input id="wpc_email" type="email" name="email">
+                </label>
+
+                <label for="wpc_phone">
+                    <span>
+                        <?php esc_html_e("Phone number", WPPC_TEXT_DOMAIN); ?>
+                    </span>
+                    <input id="wpc_phone" type="text" name="phone">
+                </label>
+
+                <input type="submit" value="<?php esc_attr_e("Submit", WPPC_TEXT_DOMAIN); ?>" name="wpc_subscriber_form_submit">
+
+                <div id="wpc_s_success_message" class="wpc_hide">
+                    <?php esc_html_e("Subscriber added successfully.", WPPC_TEXT_DOMAIN); ?>
                 </div>
             </form>
         </div>

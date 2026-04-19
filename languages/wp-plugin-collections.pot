@@ -1,0 +1,40 @@
+# Copyright (C) 2026 Hasan
+# This file is distributed under the GPL v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Wp plugin Collections 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wp-plugin-collections\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-04-19T11:11:35+02:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: wp-plugin-collections\n"
+
+#. Plugin Name of the plugin
+#: wp-plugin-collections.php
+msgid "Wp plugin Collections"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: wp-plugin-collections.php
+msgid "https://hasan.com/plugins/post-reading-time-plus/"
+msgstr ""
+
+#. Description of the plugin
+#: wp-plugin-collections.php
+msgid "Show the reading time of each post"
+msgstr ""
+
+#. Author of the plugin
+#: wp-plugin-collections.php
+msgid "Hasan"
+msgstr ""
+
+#. Author URI of the plugin
+#: wp-plugin-collections.php
+msgid "https://author.hasan.com/"
+msgstr ""
