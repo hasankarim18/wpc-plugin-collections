@@ -34,6 +34,8 @@ class AlertMessage
             'type' => 'info',        // success, warning, danger, info
         ], $atts);
 
+
+        // #do shortcode
         $type = strtolower(trim($attributes['type']));
         $message = $content ? do_shortcode($content) : ''; // Support nested shortcodes
 
