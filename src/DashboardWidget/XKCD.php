@@ -78,10 +78,14 @@ class XKCD
         }
         ?>
         <div class="wpc_xkcd_daily_comic">
+            <?php // echo plugin_dir_url(__FILE__); ?>
             <div class="wpc_xkcd_daily_comic_img">
                 <img style="width:100%; max-width:385px;height:auto; " src="<?php echo esc_attr($data->img); ?>"
                     alt="<?php echo esc_attr($data->alt) ?>">
             </div>
+            <h2>
+                <strong> <?php echo esc_html($data->title); ?></strong>
+            </h2>
         </div>
         <?php
         ;

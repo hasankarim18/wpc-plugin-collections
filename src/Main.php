@@ -13,6 +13,8 @@ use Hasan\WpPluginCollections\SecureForm\SecureForm;
 use Hasan\WpPluginCollections\Subscribers\Subscribers;
 use Hasan\WpPluginCollections\QueryBuilder\QueryBuilder;
 use Hasan\WpPluginCollections\DashboardWidget\DashboardWidget;
+use Hasan\WpPluginCollections\ContactFormCollections\ContactFormCollections;
+use Hasan\WpPluginCollections\AlertMessage\AlertMessage;
 
 
 
@@ -55,7 +57,9 @@ class Main
             new SecureForm(),
             new Subscribers(),
             new QueryBuilder(),
-            new DashboardWidget()
+            new DashboardWidget(),
+            new ContactFormCollections(),
+            new AlertMessage()
         ];
 
 

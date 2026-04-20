@@ -91,7 +91,9 @@ class XKCD
         ?>
 
         <div class="wpc_xkcd_daily_comic">
+
             <div class="wpc_xkcd_daily_comic_img">
+
                 <img style="width:100%; max-width:400px;height:auto;" src="<?php echo esc_url($data->img); ?>"
                     alt="<?php echo esc_attr($data->alt); ?>">
 
