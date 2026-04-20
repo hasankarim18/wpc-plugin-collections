@@ -11,6 +11,8 @@ use Hasan\WpPluginCollections\LoadAssets\LoadAssets;
 use Hasan\WpPluginCollections\QuickQrCode\QuickQrCode;
 use Hasan\WpPluginCollections\SecureForm\SecureForm;
 use Hasan\WpPluginCollections\Subscribers\Subscribers;
+use Hasan\WpPluginCollections\QueryBuilder\QueryBuilder;
+use Hasan\WpPluginCollections\DashboardWidget\DashboardWidget;
 
 
 
@@ -51,7 +53,9 @@ class Main
             new HooksPlay(),
             new QuickQrCode(),
             new SecureForm(),
-            new Subscribers()
+            new Subscribers(),
+            new QueryBuilder(),
+            new DashboardWidget()
         ];
 
 
