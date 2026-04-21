@@ -1,0 +1,105 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Container */
+.dynamic_list.container {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 12px;
+  background: #1e1e2f;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  font-family: Arial, sans-serif;
+}
+
+/* Title */
+.dynamic_list h3 {
+  margin-bottom: 15px;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* Input section */
+.dynamic_inputs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* Input field */
+.dynamic_inputs input {
+  flex: 1;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #444;
+  background: #2a2a3d;
+  color: #fff;
+  outline: none;
+  transition: 0.2s ease;
+}
+
+.dynamic_inputs input::placeholder {
+  color: #aaa;
+}
+
+.dynamic_inputs input:focus {
+  border-color: #6c63ff;
+  box-shadow: 0 0 5px rgba(108, 99, 255, 0.5);
+}
+
+/* Add button */
+.dynamic_inputs button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  background: #6c63ff;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.dynamic_inputs button:hover {
+  background: #574fd6;
+}
+
+/* List container */
+.dynamic_lists_loop {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Individual item */
+.list_item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 12px;
+  background: #2a2a3d;
+  border-radius: 8px;
+  color: #fff;
+  transition: 0.2s ease;
+}
+
+.list_item:hover {
+  transform: translateY(-2px);
+  background: #34344f;
+}
+
+/* Remove button */
+.list_item button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 6px;
+  background: #ff5c5c;
+  color: #fff;
+  cursor: pointer;
+  font-size: 12px;
+  transition: 0.2s ease;
+}
+
+.list_item button:hover {
+  background: #e04848;
+}

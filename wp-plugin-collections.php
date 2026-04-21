@@ -33,7 +33,7 @@ define('WPPC_ACF_URL', plugin_dir_url(__FILE__) . '/lib/advanced-custom-fields/'
 define('WPPC_RELATIVE_PATH', dirname(plugin_basename(__FILE__)));
 
 
-// acf inincluded for the 6.8.01 for subscriber module
+// acf inincluded for the 6.8.01 for subscriber module as a library
 include_once(WPPC_ACF_PATH . 'acf.php');
 require_once __DIR__ . '/vendor/autoload.php';
 

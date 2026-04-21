@@ -1,0 +1,134 @@
+/* Container */
+.wrap {
+  padding: 20px;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  min-height: 100vh;
+  color: #e2e8f0;
+}
+
+/* Heading */
+.wrap h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #f8fafc;
+  letter-spacing: 1px;
+}
+
+/* Grid Layout */
+.wpc_news_letter_box_container_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+/* Card Box */
+.wpc_news_letter_box {
+  background: linear-gradient(145deg, #1e293b, #334155);
+  border-radius: 16px;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.4),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+}
+
+/* Glow effect */
+/* .wpc_news_letter_box::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(56, 189, 248, 0.2),
+    transparent
+  );
+  opacity: 0;
+  transition: 0.4s;
+} */
+
+/* Hover */
+.wpc_news_letter_box:hover {
+  transform: translateY(-6px) scale(1.01);
+  box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.6),
+    0 0 20px rgba(56, 189, 248, 0.25);
+}
+
+/* .wpc_news_letter_box:hover::before {
+  opacity: 1;
+} */
+
+/* Card Title */
+.wpc_news_letter_box h3 {
+  font-size: 20px;
+  margin-bottom: 12px;
+  color: #38bdf8;
+}
+
+/* Text */
+.wpc_news_letter_box p {
+  font-size: 14px;
+  color: #cbd5f5;
+}
+
+/* Shortcode label */
+.wpc_newsletter_shortcode_title {
+  display: block;
+  font-size: 12px;
+  color: #94a3b8;
+  margin-bottom: 6px;
+}
+
+/* Shortcode code-style */
+.wpc_newsletter_shortcode {
+  display: inline-block;
+  background: #0f172a;
+  color: #22c55e;
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-family: monospace;
+  font-size: 13px;
+  box-shadow: inset 0 0 8px rgba(34, 197, 94, 0.2);
+}
+
+/* Shortcode code-style (improved) */
+.wpc_newsletter_shortcode {
+  display: inline-block;
+  background: #020617; /* darker for contrast */
+  color: #e2e8f0; /* lighter text */
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-family: Consolas, monospace;
+  font-size: 13px;
+
+  /* IMPORTANT for copying */
+  cursor: text;
+  user-select: all;
+
+  /* subtle glow */
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.05);
+}
+
+/* Optional: nicer selection color */
+.wpc_newsletter_shortcode::selection {
+  background: #38bdf8;
+  color: #020617;
+}
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .wrap {
+    padding: 15px;
+  }
+
+  .wrap h2 {
+    font-size: 22px;
+  }
+
+  .wpc_news_letter_box {
+    padding: 16px;
+  }
+}

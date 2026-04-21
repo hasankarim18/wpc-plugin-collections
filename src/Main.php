@@ -15,6 +15,7 @@ use Hasan\WpPluginCollections\QueryBuilder\QueryBuilder;
 use Hasan\WpPluginCollections\DashboardWidget\DashboardWidget;
 use Hasan\WpPluginCollections\ContactFormCollections\ContactFormCollections;
 use Hasan\WpPluginCollections\AlertMessage\AlertMessage;
+use Hasan\WpPluginCollections\NewsLetter\NewsLetter;
 
 
 
@@ -59,7 +60,8 @@ class Main
             new QueryBuilder(),
             new DashboardWidget(),
             new ContactFormCollections(),
-            new AlertMessage()
+            new AlertMessage(),
+            new NewsLetter()
         ];
 
 

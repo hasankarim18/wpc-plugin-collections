@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alpine Demo</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="//unpkg.com/alpinejs" defer></script>
+  </head>
+  <body>
+    <!-- #dynamic list -->
+
+    <div
+      x-data="{items:['Apple', 'Banana', 'Orange'], newItem :'' }"
+      class="dynamic_list container"
+    >
+      <h3>Dynamic Lists</h3>
+      <div class="dynamic_inputs">
+        <!-- <span style="color: #fff" x-text="newItem"></span> <br /> -->
+        <input
+          type="text"
+          x-model="newItem"
+          placeholder="Add new item"
+          @keyup.enter="items.push(newItem);newItem = ''"
+        />
+        <button type="text" @click="items.push(newItem); newItem=''">
+          Add Item
+        </button>
+      </div>
+      <div class="dynamic_lists_loop">
+        <template x-for="(item, index) in items" :key="index">
+          <div class="list_item">
+            <span x-text="item"></span>
+            <button @click="items.splice(index, 1)">Remove</button>
+          </div>
+        </template>
+      </div>
+    </div>
+
+    <script>
+      const data = {
+        message: "Hello world",
+        buttonText: "Click me",
+        count: 0,
+      };
+    </script>
+  </body>
+</html>
