@@ -25,6 +25,10 @@ class LoadAssets
 
     public function admin_enqueue_scripts($hook)
     {
+        //  var_dump("KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK-----------------------------------" . $hook);
+        if ("toplevel_page_newsletter" !== $hook) {
+            return;
+        }
         wp_enqueue_style('wpc_newsletter_admin_style', plugin_dir_url(__FILE__) . 'assets/newsletter-admin.css', [], 'all');
     }
 }

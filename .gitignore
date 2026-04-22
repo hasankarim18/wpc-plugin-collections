@@ -4,7 +4,7 @@
 /vendor/phpstan
 /vendor/squizlabs
 
-composer.json
+
 lib
 /lib
 /lib/advanced-custom-fields

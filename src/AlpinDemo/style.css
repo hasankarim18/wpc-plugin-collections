@@ -103,3 +103,39 @@
 .list_item button:hover {
   background: #e04848;
 }
+
+/* timer */
+/* Container */
+.example.container {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 25px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #1e1e2f, #2a2a40);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Title */
+.example h3 {
+  margin-bottom: 15px;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+/* Time text */
+.example p {
+  font-size: 18px;
+  color: #ccc;
+}
+
+/* Live time highlight */
+.example span {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #6c63ff;
+  letter-spacing: 1px;
+}

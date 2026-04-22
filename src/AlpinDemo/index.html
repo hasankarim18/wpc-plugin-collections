@@ -37,11 +37,22 @@
       </div>
     </div>
 
+    <!-- Example 2 Init function timer -->
+
+    <div class="example container" x-data="timer" x-init="init()">
+      <h3>Real time clock</h3>
+      <p>Current time: <span x-text="time"></span></p>
+    </div>
     <script>
-      const data = {
-        message: "Hello world",
-        buttonText: "Click me",
-        count: 0,
+      const timer = {
+        time: "",
+        updateTime() {
+          this.time = new Date().toLocaleTimeString();
+        },
+        init() {
+          this.updateTime();
+          setInterval(() => this.updateTime(), 1000); // runs after 1000ms which is 1s
+        },
       };
     </script>
   </body>
